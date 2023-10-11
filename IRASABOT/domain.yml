@@ -1,0 +1,175 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_address
+  - ask_parking
+  - ask_opening_time 
+  - query_travel_packages
+  - book_travel_package_France
+  - book_travel_package_Sweden
+  - book_travel_package_Japan
+  - mood_confused
+  - flight_delay
+  - confirm_a
+  - confirm_b
+  - ask_question
+  - choose_A
+  - choose_B
+  - choose_C
+  - enter_number
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_iamabot
+  - utter_satisfied_goodbye
+  - utter_ask_more_question
+  - utter_reply_address
+  - utter_reply_parking
+  - utter_reply_opening_time
+  - utter_ask_feedback
+  - utter_reply_travel_packages
+  - utter_travel_package_France
+  - utter_another_package_France
+  - utter_travel_package_Sweden
+  - utter_another_package_Sweden
+  - utter_travel_package_Japan
+  - utter_another_package_Japan
+  - utter_flight_delay
+  - utter_confused
+  - utter_choose_a
+  - utter_choose_b
+  - utter_answer_question
+  - utter_choose_A
+  - utter_choose_B
+  - utter_choose_C
+  - utter_reply_number
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  
+  utter_satisfied_goodbye:
+  - text: "Thank you! Welcome to your next visit! Bye!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_reply_address:
+  - text: "The company is next to the big shopping mall called DeJi. 
+          \nWe are on the 9th floor of the Commercial Century Building next to us. You can take the elevator to get there. 
+          \nIf you choose to drive here, we have parking."
+  
+  utter_reply_parking:
+  - text: "We have parking spaces on the 3rd floor of the Commercial Century Building. "
+
+  utter_reply_opening_time:
+  - text: "Our opening time is 9 a.m. to 5 p.m. from Monday to Friday."
+
+  utter_ask_more_question:
+  - text: "Great! What else can I help you?"
+
+  utter_ask_feedback:
+  - text: "OK! Are you satisfied with the service today?"
+  
+  utter_reply_travel_packages:
+  - text: "Glad to serve you! We have a lot of packages, including Swedish, French and Japanese and so on. \nWhich country package do you want, for more than 10 days or less?"
+
+  utter_travel_package_France:
+  - text: "ok! I will help you book a travel package to France. Please wait a moment.
+          \nWe have a 12-day package tour to France, including hotel reservation and car rental (at your own expense).
+          \nAlso, free guided tours of major landmarks and venues.
+          \nDo you confirm to order this package? If you do not want to book this, please enter 'n' first and then enter the question.
+          \nIf the time is too long, we have prepared a package for you under 10 days."
+
+  utter_another_package_France:
+  - text: "We have an 8-day trip to France, but we do not guarantee hotel reservation.
+          \nWe can only provide a list of hotels, which you need to book by yourself.
+          \nDo you confirm to order this package?"
+
+  utter_travel_package_Sweden:
+  - text: "ok! I will help you book a travel package to Sweden. Please wait a moment.
+         \nWe have an 11-day tour of Sweden, including hotel reservations, car rental and guided Tours of the main scenic spots.
+         \nIt will give you a perfect experience.
+         \nDo you confirm to order this package?
+         \nIf the time is too long, we have prepared a package for you under 10 days."
+
+  utter_another_package_Sweden:
+  - text: "We have an 7-day trip to Sweden, but we do not guarantee hotel reservation.
+          \nWe can only provide a list of hotels, which you need to book by yourself.
+          \nDo you confirm to order this package?"
+
+  utter_travel_package_Japan:
+  - text: "ok! I will help you book a travel package to Japan. Please wait a moment.
+          \nWe have an 11-day tour of Japan, including hotel reservations, car rental and guided Tours of the main scenic spots.
+          \nIt will give you a perfect experience.
+          \nDo you confirm to order this package?
+          \nIf the time is too long, we have prepared a package for you under 10 days."
+
+  utter_another_package_Japan:
+  - text: "We have an 7-day trip to Japan, but we do not guarantee hotel reservation.
+          \nWe can only provide a list of hotels, which you need to book by yourself.
+          \nDo you confirm to order this package?"
+  
+  utter_flight_delay:
+  - text: "Sorry for the trouble caused to your trip! 
+          \nWe have prepared plan a for you: transfer to another available flight, the flight number can be viewed on the software. 
+          \nOr you can choose Plan b: cancel the trip. We will give you a full refund, but you have to pay 10% of the service fee.
+          \nPlease enter a or b to confirm your chosen solution:"
+
+  utter_confused:
+  - text: "It doesn't matter! Could you tell me what your specific problem is?"
+
+  utter_choose_a:
+  - text: "Yes! I would like to order a new flight number for you, which is CZ347."
+
+  utter_choose_b:
+  - text: "OK! I will help you cancel the trip. Please wait a moment.
+          \nWe have refunded the full amount to your account. "
+
+  utter_answer_question:
+  - text: "ok! There are three ways to solve this problem on our side!
+          \nA. Contact our supervisor.
+          \nB. We are very sorry that you need to send us an email to tell us more detailed information.
+          \nC. If you need an immediate solution, you can speak directly to the senior management."
+
+  utter_choose_A:
+  - text: "Yes! Connecting you to a supervisor named John..."
+
+  utter_choose_B:
+  - text: "Our email address is: 123456789@163.com. You can write a detailed email here, and we will reply as soon as possible."
+
+  utter_choose_C:
+  - text: "What is your contact number: "
+  
+  utter_reply_number:
+  - text: "OK! One of our executives named Tom will contact you immediately, please pay attention to your phone!"
+
+
+session_config:
+  session_expiration_time: 600
+  carry_over_slots_to_new_session: true

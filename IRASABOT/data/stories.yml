@@ -1,0 +1,250 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_satisfied_goodbye
+
+- story: ask address
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: ask_address
+  - action: utter_reply_address
+  - intent: ask_parking
+  - action: utter_reply_parking
+  - intent: ask_opening_time
+  - action: utter_reply_opening_time
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: query travel packages France 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: query_travel_packages
+  - action: utter_reply_travel_packages
+  - intent: book_travel_package_France
+  - action: utter_travel_package_France
+  - intent: affirm
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: query travel packages France 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: query_travel_packages
+  - action: utter_reply_travel_packages
+  - intent: book_travel_package_France
+  - action: utter_travel_package_France
+  - intent: deny
+  - action: utter_another_package_France
+  - intent: affirm
+  - action: utter_ask_feedback  
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: query travel packages Sweden 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: query_travel_packages
+  - action: utter_reply_travel_packages
+  - intent: book_travel_package_Sweden
+  - action: utter_travel_package_Sweden
+  - intent: affirm
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: query travel packages Sweden 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: query_travel_packages
+  - action: utter_reply_travel_packages
+  - intent: book_travel_package_Sweden
+  - action: utter_travel_package_Sweden
+  - intent: deny
+  - action: utter_another_package_Sweden
+  - intent: affirm
+  - action: utter_ask_feedback  
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: query travel packages Japan 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: query_travel_packages
+  - action: utter_reply_travel_packages
+  - intent: book_travel_package_Japan
+  - action: utter_travel_package_Japan
+  - intent: affirm
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: query travel packages Japan 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: query_travel_packages
+  - action: utter_reply_travel_packages
+  - intent: book_travel_package_Japan
+  - action: utter_travel_package_Japan
+  - intent: deny
+  - action: utter_another_package_Japan
+  - intent: affirm
+  - action: utter_ask_feedback  
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: goodbye path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: flight_delay_a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_confused
+  - action: utter_confused
+  - intent: flight_delay
+  - action: utter_flight_delay
+  - intent: confirm_a
+  - action: utter_choose_a
+  - intent: affirm
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: flight_delay_b
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_confused
+  - action: utter_confused
+  - intent: flight_delay
+  - action: utter_flight_delay
+  - intent: confirm_b
+  - action: utter_choose_b
+  - intent: affirm
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: Solve_problems_A
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_confused
+  - action: utter_confused
+  - intent: ask_question
+  - action: utter_answer_question
+  - intent: choose_A
+  - action: utter_choose_A
+  - intent: affirm
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: Solve_problems_B
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_confused
+  - action: utter_confused
+  - intent: ask_question
+  - action: utter_answer_question
+  - intent: choose_B
+  - action: utter_choose_B
+  - intent: affirm
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+- story: Solve_problems_C
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_confused
+  - action: utter_confused
+  - intent: ask_question
+  - action: utter_answer_question
+  - intent: choose_C
+  - action: utter_choose_C
+  - intent: enter_number
+  - action: utter_reply_number
+  - intent: affirm
+  - action: utter_ask_more_question
+  - intent: deny
+  - action: utter_ask_feedback 
+  - intent: affirm
+  - action: utter_satisfied_goodbye
+
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

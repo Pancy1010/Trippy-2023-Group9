@@ -1,0 +1,197 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: ask_address
+  examples: |
+    - I want to know about nearby company offices.
+    - where are you located?
+    - What is the address of your office?
+    - where is your office?
+    - where is your office located?
+    - where is your office located at in the city?
+    - Give me directions to the nearest office.
+
+- intent: ask_parking
+  examples: |
+    - where can I park my car?
+    - where can I park my car at?
+    - where can I park my car at in the city?
+
+- intent: ask_opening_time
+  examples: |
+    - what time do you open?
+    - what time do you open at?
+    - I'd like to know your business hour.
+    - what time do you open at in the morning?
+
+- intent: query_travel_packages
+  examples: |
+    - I want to know about travel packages.
+    - Provide details about your travel packages.
+    - I want to know about your travel packages.
+    - I want to know about your travel packages in detail.
+
+
+- intent: book_travel_package_France
+  examples: |
+    - I want to book a travel package to France.
+    - I want to book a travel package to France for 10 days.
+    - I want to book a travel package to France for 10 days from today.
+
+
+- intent: book_travel_package_Sweden
+  examples: |
+    - I want to book a travel package to Sweden.
+    - I want to book a travel package to Sweden for 10 days.
+    - I want to book a travel package to Sweden for 10 days from today.
+
+
+- intent: book_travel_package_Japan
+  examples: |
+    - I want to book a travel package to Japan.
+    - I want to book a travel package to Japan for 10 days.
+    - I want to book a travel package to Japan for 10 days from today.
+
+
+- intent: mood_confused
+  examples: |
+    - I ran into some difficulties
+    - I am confused
+    - Now there are some questions
+
+- intent: flight_delay
+  examples: |
+    - My flight is delayed.
+    - My flight is delayed by 2 hours.
+    - My flight is delayed by 2 hours from now.
+
+- intent: confirm_a
+  examples: |
+    - plan a
+    - I choose a
+    - I choose A
+
+
+- intent: confirm_b
+  examples: |
+    - plan b
+    - I choose b 
+    - I choose B
+
+- intent: ask_question
+  examples: |
+    - What is the specific route and schedule of the journey?
+    - What is the estimated budget for this trip?
+    - How about the quality of the hotel you arranged?
+    - Will the travel schedule be tight or free?
+
+- intent: choose_A
+  examples: |
+    - A
+    - a
+
+- intent: choose_B
+  examples: |
+    - B
+    - b
+  
+
+
+- intent: choose_C
+  examples: |
+    - C
+    - c
+
+- intent: enter_number
+  examples: |
+    - 12345678990
+    - 15751761650
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
